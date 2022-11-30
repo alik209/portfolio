@@ -1,1 +1,1038 @@
 @import url(./reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/*HELPER CLASS*/
+.container{
+    padding: 0 7.03rem;
+}
+
+
+/*BASLIQ VE LOQO*/
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100vh;
+   transform: scale(0);
+}
+.overlay-active{
+    transform: scale(1);
+}
+.nav-links>a{
+    color: #000;
+  text-decoration: none;
+  padding: 20px;
+  transition: .8s ease;
+   
+}  
+.nav-links a:hover{
+    color:brown ;
+}
+.overlay-links>a{
+   text-decoration: none;
+    font-size: 3.5rem;
+    color: #bbb;
+    transition: .8s ease;
+ 
+}
+.overlay-links a:hover{
+    color: #fff;
+}
+.overlay-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.fa-xmark{
+    color: #fff;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 2rem;
+}
+.fa-bars{
+    display: none;
+}
+
+
+nav{
+    padding-top: 3.5rem;
+}
+.logoo{
+    padding-top: 56px;
+}
+
+/*YAZI VE SEKIL*/
+a{
+    text-decoration: none;
+}
+.introsection{
+    padding:  7.03rem;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.introsection> .intro-left-side{
+    display: flex;
+   flex-direction: column;
+   padding-top: 1.31rem;
+}
+.introsection> .intro-left-side h1{
+    font-weight: 700;
+    font-size: 72px;
+
+}
+
+.introsection> .intro-left-side h1 span{
+    color: #FF8A56;
+}
+
+.introsection> .intro-left-side small{
+    margin-top: 30px;
+    font-weight: 400;
+    color: #666;
+    font-size: 22px;
+
+}
+
+.intro-right-side{
+    padding-top: 15px;
+}
+.qaqas{
+
+margin-top: -70px;
+width: 100%;
+
+}
+
+.button-groups img{
+    margin-left: 19px;
+}
+
+
+.intro-left-side .button-groups{
+    display: flex;
+    margin-top: 15px;
+}
+ 
+.intro-left-side .button-groups a{
+    margin-right: 13px;
+}
+.intro-left-side .button-groups a:nth-child(1) {
+    width:151px;
+    height: 58px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-left-side .button-groups a:nth-child(2){
+    display:flex ;
+    align-items: center;
+    color: #000;
+}
+
+
+
+
+
+
+
+/*partnyor logolar*/
+
+.trusted-center{
+    display: flex;
+    justify-content: center;
+
+    padding: 40px;
+ 
+}
+.trusted{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.write{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/*services*/
+.wrservices {
+    
+    display: flex;
+    padding: 130px ;
+    justify-content: center;
+   
+}
+.servicesimg{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.saboute{
+    font-size: 54px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 40px;
+   font-weight: 700px;
+}
+
+
+.logoes{
+   display: flex;
+    justify-content: center;
+}
+.logoesall{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    padding: 130px  30px;
+   
+
+}
+
+
+
+.logoesall img{
+    padding: 13px 60px;
+    
+
+}
+.logoes-services-lamp{
+    padding-right: 261px;
+}
+.logoes-services-ox{
+    padding-right: 261px;
+
+}
+.logoes-services-adam{
+    padding-right: 100px;
+    padding-top: 146px ;
+}
+
+  .logoes-services-lamp h1{
+   font-weight: 700;
+   font-size: 24px;
+   padding: 13px 0px;
+   
+   
+}
+
+.logoes-services-ox h1{
+    font-weight: 700;
+   font-size: 24px;
+   padding: 13px 0px;
+}
+.logoes-services-adam h1{
+    font-weight: 700;
+    font-size: 24px;
+    padding: 13px 0px 14px ;
+   
+}
+.logoes-services-adam p{
+    padding: 0px 0px 14px;
+    
+    
+}
+
+.logoes-services-ox p{
+    padding: 0px 0px 14px;
+}
+
+.logoes-services-lamp p{
+    padding: 0px 0px 14px;
+}
+
+.logoesall li{
+    font-size: 22px;
+    font-weight: 700;
+}
+.logoes-services-adam li{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/*POST KARDLAR*/
+
+.project-card-section{
+    display: flex;
+    justify-content: space-around;
+    
+   
+}
+
+.wiew-all-project{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 40px;
+}
+ 
+.card .top{
+    width: inherit;
+  height: 305px;
+ 
+}
+
+.card .buttom{
+    height: 163px;
+    flex-direction: column;
+    background-color: #fff;
+
+   
+    display: flex;
+    padding: 40px;
+    gap: 10px;
+   
+    
+}
+
+.card .top img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.brandering{
+    width: 200px;
+    margin: 0px  0px 10px ;
+    
+}
+
+.project-card-section .card{
+    box-shadow: 10px 15px 12px rgba(0,0,0,.7);
+}
+
+.wiew-all-project pre{
+    font-weight: 700;
+    font-size: 54px;
+}
+.project-text-section h2{
+    font-weight: 700;
+    font-size: 30px;
+    color: #B16CEA;
+    padding: 30px;
+}
+
+.project-text-section a:nth-child(2){
+    width:151px;
+    height: 58px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-card-section h1{
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+
+
+
+}
+
+
+/*LATEST BLOG SECTION*/
+
+.latest-block-section{
+    background-color: #000;
+   color: #fff;
+    padding: 40px;
+    margin-top: -250px;
+    padding-top: 350px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.blog{
+    padding: 40px;
+    border-bottom: 1px solid #fff;
+    flex-direction: column;
+   display: flex;
+    gap: 20px;
+}
+
+.left-side h4{
+    color: #FFA84B;
+    font-size: 22px;
+    font-weight: 700;
+   
+}
+
+
+
+.left-side h2{
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.latest-block-section a {
+color: #fff;
+}
+.images{
+    color: #fff;
+    background-color: #fff;
+}
+.left-side{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+   
+}
+
+/*ETO YA*/
+
+.product-text-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side-design{
+   padding: 130px;
+   display: flex;
+   flex-direction: column;
+}
+
+.right-side-design{
+    padding: 180px;
+    display: flex;
+    flex-direction: column;
+    
+ }
+
+ 
+.pds-img{
+    display: flex;
+   gap: 10px;
+
+   padding: 0px 150px;
+}
+
+.right-side-img{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.left-side-design pre{
+    color: #FF5E69;
+    font-size: 35px;
+    font-weight: 700;
+    
+}
+
+.left-side-design{
+    gap: 30px;
+    display: flex;
+    font-weight: 700;
+    font-size: 54px;
+    justify-content: space-between;
+
+}
+
+/*EDUCATON AND WORK*/
+
+.workandedu{
+    display: flex;
+    padding: 10px;
+    padding-top: 60px;
+
+}
+
+.education{
+    flex-basis: 40%;
+    
+
+ 
+}
+
+.workexperience{
+
+flex: 40%;
+
+
+}
+.university{
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.university-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.university-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.metadata{
+    margin-right: 30px;
+}
+
+.work-timeline{
+    display: flex;
+    
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #E5E5E5 ;
+    padding: 30px;
+}
+.work-top{
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    justify-content: space-between;
+}
+
+.work-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.workbookedu{
+   padding-left: 50px; ;
+    display: flex;
+    
+}
+
+
+/*TESTIOMANAL*/
+
+.testiomanal{
+    display: flex;
+    padding: 60px;
+}
+
+.left-testi{
+    flex-basis: 40%;
+}
+.right-testi{
+    flex: 1;
+}
+
+.left-testi{
+    display: flex;
+    flex-direction: column;
+}
+.right-testi{
+    display: flex;
+    flex-direction: column;
+}
+
+.qusqus{
+    display: flex;
+    width: 25%;
+    padding-left: 140px;
+    padding-top: 100px;
+}
+
+.testi{
+    display: flex;
+    padding-left: 60px;
+    padding-top:40px ;
+}
+
+.left-testi h4{
+    display: flex;
+    font-size: 54px;
+    font-weight: 700;
+   
+    
+}
+
+.neqr{
+    display: flex;
+    padding-top: 60px;
+}
+
+.right-testi-h pre{
+    display: flex;
+   justify-content: center;
+   padding-top:  120px;
+   font-size: 36px;
+   font-weight: 700;
+
+}
+
+.matdat{
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.matdat h1{
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px;
+}
+.matdat h2{
+padding-left: 10px;
+}
+
+/*FAQ*/
+.faq{
+    display: flex;
+    padding: 70px;
+    background-color: #000;
+  
+
+    
+}
+
+.left-faqs{
+    flex-basis: 50%;
+   
+}
+.right-faqs{
+    flex: 1;
+  
+   
+    padding-left: 140px;
+    display:flex ;
+    flex-direction: column;
+
+    
+   
+}
+
+.faq h1{
+    color: #fff;
+   
+}
+
+.right-faq{
+    border-bottom: 1px solid  #E5E5E54D;
+    padding: 30px;
+}
+
+.left-faq{
+    border-bottom: 1px solid  #E5E5E54D;
+    padding: 30px;
+    
+}
+
+.faq-icon{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 500px;
+   
+    
+}
+.left-faq >.faq-icon{
+    display: flex;
+    padding-left: 570px;
+}
+.pree{
+    color:  #FF8A56;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #000;
+    justify-content: center;
+    display: flex;
+    padding-top: 100px;
+}
+
+.frequently{
+    background-color: #000;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    font-size: 54px;
+    font-weight: 700;
+    padding: 30px;
+}
+
+/*READY*/
+
+.ready{
+    display: flex;
+background-color: #000;
+
+}
+
+
+.ready-right{
+    flex-basis: 30%;
+    display: flex;
+    
+}
+.ready-left{
+    flex: 1;
+display: flex;
+flex-direction: column;
+padding: 30px;
+}
+
+
+.linkss{
+    flex-direction: column;
+    display: flex;
+    padding: 40px;
+}
+
+.linkss a{
+    padding: 20px;
+    color: #fff;
+}
+
+.ready h1{
+   color: #fff;
+   padding: 15px;
+}
+.ready h4, a{
+    color: #666;
+    padding: 10px;
+}
+
+.resdy{
+    font-size: 54px;
+    font-weight: 700;
+    display: flex;
+    color: #fff;
+    background-color: #000;
+    
+   padding-left: 50px;
+    
+}
+
+.resdyh2{
+    color: #3C46FF;
+    font-size: 54px;
+    font-weight: 700;
+    background-color: #000;
+    padding-left: 50px;
+}
+
+.hport{
+    font-weight: 700;
+
+    font-size: 20px;
+}
+
+/*RESPONSIV*/
+@media(max-width:768px){
+    .nav-links{
+     display: none;
+    }
+    .fa-bars{
+     display: flex;
+     padding-top: 3rem ;
+     cursor: pointer;
+    
+    }
+
+    .introsection> .intro-left-side h1{
+        font-size: 30px;
+        
+    }
+    .qaqas{
+        width: 393px;
+        height: 319px;
+    }
+
+    .introsection> .intro-left-side small{
+        font-size: 10px;
+    }
+    .intro-left-side .button-groups a:nth-child(1) {
+        width: 80px;
+    height: 21px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    }
+    .intro-left-side .button-groups a:nth-child(2) {
+        display: flex;
+        align-items: center;
+        color: #000;
+        font-size: 10px;
+        margin-top: -7px;
+    }
+
+    .trusted .slide{
+       padding: 10px;
+    }
+    .saboutess h1{
+       padding-left: 110px;
+       font-size: 55px;
+    }
+    
+    .logoes-services-lamp{
+        padding-right: 0px;
+        
+    }
+
+    .logoes-services-lamp img{
+        width:65%
+    }
+  .logoes-services-adam{
+    padding-right: 0px;
+  }
+  .logoes-services-ox{
+    padding-right: 0px;
+  }
+
+  .logoes-services-adam img{
+    width:20%
+}
+.logoes-services-ox img{
+    width:87%
+}
+
+.logoes-services-adam h1{
+font-size: 15px;
+}
+.logoes-services-ox h1{
+    font-size: 15px;
+
+}
+.logoes-services-lamp h1{
+
+    font-size: 15px;
+}
+
+.logoesall p{
+    font-size: 10px;
+}
+.logoesall li{
+    font-size: 16px;
+}
+.logoes-services-adam p{
+    font-size: 10px;
+}
+.logoes-services-adam li{
+    font-size: 16px;
+}
+.card .top{
+    width: 240px;
+    height: 213px;
+}
+.card .buttom{
+    height: 150px;
+    width: 240px;
+    flex-direction: column;
+    background-color: #fff;
+
+   
+    display: flex;
+    padding: 40px;
+    gap: 10px;
+   
+    
+}
+.project-card-section .card{
+    box-shadow: 5px 6px 8px rgba(0,0,0,.7);
+}
+
+
+
+.brandering{
+    width: 100px;
+    margin: 0px  0px 10px ;
+    
+}
+
+.project-card-section h1{
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+
+
+
+}
+.pds-img{
+    display: flex;
+  
+
+   padding: 0px 80px;
+   margin-top: -200px;
+}
+
+.mumsekil{
+    width: 134px;
+    height: 400px;
+gap: 0px;
+}
+
+.mumsekil2{
+    width: 200px;
+    height: 400px;
+    gap: 0px;
+    display: flex;
+    
+   
+}
+
+.mumsekil3{
+    width: 150px;
+    height: 211px;
+    gap: 0px;
+    padding-top: 76px;
+
+    
+
+}
+.mumsekil4{
+    
+    width: 150px;
+    height: 135px;
+    gap: 0px;
+
+      
+   
+}
+.right-side-design {
+   display: none;
+}
+
+
+
+.education {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+.workexperience{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+   
+}
+.booker{
+    display: flex;
+    width: 150px;
+}
+
+.workbookedu{
+    display: flex;
+    width: 250px;
+}
+
+.education{
+   
+    display: flex;
+    
+
+ 
+}
+
+.testi{
+    display: flex;
+   width: 40%;
+}
+
+.left-testi h4{
+ font-size: 20px;
+}
+
+.neqr{
+    display: flex;
+    width: 300px;
+}
+.qusqus{
+    display: flex;
+    width: 100px;
+    padding-left: 70px;
+
+}
+
+.right-testi-h pre{
+    font-size: 19px;
+    padding-top: 50px;
+   
+}
+
+
+.matdat h1{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 24px;
+}
+
+.matdat h2{
+    font-size: 10px;
+    padding-left: 30px;
+    padding-top: -40px;
+    display: flex;
+}
+.faq{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-faq{
+    
+    display: flex;
+    flex-direction: column;
+
+
+
+
+
+}
+.right-faqs{
+    display: flex;
+    flex-direction: column;
+    padding-left:10px;
+}
+
+.right-faqs .faq-icon{
+    display: flex;
+   
+    
+    padding-left: 560px;
+}
+
+.linkss{
+    flex-direction: column;
+    display: flex;
+    padding: 10px;
+}
+
+.linkss a{
+    padding: 10px;
+    color: #fff;
+    display: flex;
+}
+    
+}
